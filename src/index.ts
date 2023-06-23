@@ -62,6 +62,8 @@ export function WebVitals(options: Options) {
         return;
       }
 
+      isRegistered = true;
+
       let fullOptions = {
         ...options,
         params,
