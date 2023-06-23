@@ -1,7 +1,7 @@
 import * as React from "react";
 import type { Metric } from "web-vitals";
-import type { Params } from "react-router-dom";
-import { useLocation, useParams } from "react-router-dom";
+import type { Params } from "@remix-run/react";
+import { useLocation, useParams } from "@remix-run/react";
 import { onCLS, onFCP, onFID, onLCP, onTTFB, onINP } from "web-vitals";
 
 let vitalsUrl = "https://vitals.vercel-analytics.com/v1/vitals";
