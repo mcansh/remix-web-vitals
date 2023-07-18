@@ -24,7 +24,7 @@ bun add @mcansh/remix-web-vitals
 import { WebVitals } from "@mcansh/remix-web-vitals";
 
 export async function loader() {
-  return json({ analyticsId: process.env.VERCEL_ANALYTICS_ID });
+  return json({ analyticsId: process.env.VERCEL_WEB_ANALYTICS_ID });
 }
 
 export default function App() {
