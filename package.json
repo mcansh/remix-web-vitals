@@ -51,6 +51,7 @@
   "license": "MIT",
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
+    "@manypkg/get-packages": "^2.2.0",
     "@remix-run/eslint-config": "^1.18.1",
     "@remix-run/react": "^1.18.1",
     "@tsconfig/node16": "^16.1.0",
