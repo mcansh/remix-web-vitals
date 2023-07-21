@@ -5,23 +5,24 @@ import pkgJSON from "./package.json";
 let external = Object.keys(pkgJSON.dependencies || {});
 
 export default defineConfig(() => {
-  let shared_options: Options = {
+  let options: Options = {
     entry: ["src/index.ts"],
     sourcemap: true,
     external,
     tsconfig: "./tsconfig.json",
+    target: "es2020",
+    dts: true,
   };
 
   return [
     {
-      ...shared_options,
+      ...options,
       format: "cjs",
     },
 
     {
-      ...shared_options,
+      ...options,
       format: "esm",
-      dts: true,
     },
   ];
 });
