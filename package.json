@@ -32,6 +32,9 @@
   "module": "./dist/index.js",
   "source": "./src/index.ts",
   "types": "./dist/index.d.cts",
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "dist",
     "package.json",
