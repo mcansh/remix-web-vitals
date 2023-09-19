@@ -12,7 +12,7 @@
     "validate": "run-p build lint format publint",
     "test": "pnpm run validate",
     "changeset": "changeset",
-    "changeset:version": "changeset version && node ./scripts/remove-prerelease-changelogs.mjs",
+    "changeset:version": "changeset version && node ./scripts/remove-prerelease-changelogs.js",
     "changeset:release": "pnpm run build && changeset publish"
   },
   "exports": {
