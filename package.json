@@ -1,6 +1,6 @@
 {
   "name": "@mcansh/remix-web-vitals",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Web Vitals for Remix",
   "type": "module",
   "scripts": {
