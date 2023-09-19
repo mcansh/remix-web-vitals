@@ -1,5 +1,11 @@
 # @mcansh/remix-web-vitals
 
+## 0.3.5
+
+### Patch Changes
+
+- b4c6bd1: enable treeshaking
+
 ## 0.3.4
 
 ### Patch Changes
