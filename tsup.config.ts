@@ -12,17 +12,11 @@ export default defineConfig(() => {
     tsconfig: "./tsconfig.json",
     target: "es2020",
     dts: true,
+    clean: true,
   };
 
   return [
-    {
-      ...options,
-      format: "cjs",
-    },
-
-    {
-      ...options,
-      format: "esm",
-    },
+    { ...options, format: "cjs" },
+    { ...options, format: "esm" },
   ];
 });
