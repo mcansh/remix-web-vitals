@@ -1,11 +1,10 @@
 import { defineConfig } from "tsup";
-import type { Options } from "tsup";
 
 import pkgJSON from "./package.json";
 let external = Object.keys(pkgJSON.dependencies || {});
 
 export default defineConfig(() => {
-  let options: Options = {
+  return {
     entry: ["src/index.ts"],
     sourcemap: true,
     external,
@@ -13,10 +12,8 @@ export default defineConfig(() => {
     target: "es2020",
     dts: true,
     clean: true,
+    format: ["cjs", "esm"],
+    treeshake: true,
+    cjsInterop: true,
   };
-
-  return [
-    { ...options, format: "cjs" },
-    { ...options, format: "esm" },
-  ];
 });
