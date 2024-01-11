@@ -1,5 +1,11 @@
 # @mcansh/remix-web-vitals
 
+## 0.3.6
+
+### Patch Changes
+
+- b58e87f: add funding to package.json
+
 ## 0.3.5
 
 ### Patch Changes
