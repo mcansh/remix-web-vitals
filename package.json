@@ -28,6 +28,12 @@
       "default": "./dist/index.cjs"
     }
   },
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/mcansh"
+    }
+  ],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "source": "./src/index.ts",
